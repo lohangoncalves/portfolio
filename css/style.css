@@ -70,7 +70,7 @@ header > nav#menu a {
 }
 
 header > nav#menu a:hover{
-    color: yellow;
+    color: #fffd70;
 }
 
 header > nav#menu a:active{
