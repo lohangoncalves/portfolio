@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* PALETA DE CORES */
+    --fundo-principal: #f0f8ff;
+    --texto: #223033;
+    --texto-inverso: #ffffff;
+    --destaque: #0077ff;
+    --destaque-inverso: #43e3ff;
+    --fundo-card: #ffffff;
+
+    /* FONTES */
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-rubik: "Rubik", sans-serif;
+
+}
+
+body{
+    font-family: var(--font-rubik);
+    line-height: 1.5em;
+    background-color: var(--fundo-principal);
+}
+
+/* ------------------------------ HEADER ------------------------------ */
+header{
+    background-color: var(--destaque);
+    color: var(--texto);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+header > nav#menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+span.material-icons{
+    font-size: 1.8em;
+    transition: transform 0.3s ease;
+}
+
+span.material-icons:hover{
+    transform: translateY(-4px); 
+}
+
+header > nav#menu a {
+    text-decoration: none;
+    color: var(--texto-inverso);
+    transition: color 0.2s ease;
+    text-shadow: 1px 1px 1px var(--texto);
+}
+
+header > nav#menu a:hover{
+    color: yellow;
+}
+
+header > nav#menu a:active{
+    color: var(--destaque-inverso);
+}
