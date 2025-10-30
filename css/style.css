@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--font-padrao);
 }
 
 :root{
@@ -36,14 +37,20 @@ header{
     color: var(--texto);
     padding: 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-content: center;
+    box-shadow: 0 0 5px black;
+}
+
+header > h1{
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.541);
 }
 
 header > nav#menu ul{
     list-style-type: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 
 span.material-icons{
