@@ -1,2 +1,43 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 768px) {
+    main{
+        grid-template-columns: auto 300px 1fr auto;
+    }
+
+    header{
+        justify-content: flex-end;
+    }
+
+    section#home{
+        grid-column: 2 / 3;
+        height: fit-content;
+        position: sticky;
+        top: 90px;
+    }
+
+    section#detalhes{
+        grid-column: 3 / 4;
+    }
+
+    #skill-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #projeto-container .projeto{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #projeto-container .projeto-info{
+        max-width: 60%;
+        max-height: 100%;
+    }
+
+    #projeto-container .foto{
+        aspect-ratio: 1/1;
+        max-width: 40%;
+        max-height: 200px;
+    }
+
+}

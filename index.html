@@ -11,37 +11,199 @@
 </head>
 <body>
     <header>
-        <h1>Lohan Gonçalves</h1>
         <nav id="menu">
             <ul>
-                <li><a href="#" title="Início"><span class="material-icons">home</span></a></li>
-                <li><a href="#" title="Habilidades"><span class="material-icons">person</span></a></li>
-                <li><a href="#" title="Formação"><span class="material-icons">school</span></a></li>
-                <li><a href="#" title="Projetos"><span class="material-icons">design_services</span></a></li>
-                <li><a href="#" title="Tema de fundo"><span class="material-icons">dark_mode</span></a></li>
+                <li><a href="#home" class="link" title="Início"><span class="material-icons">home</span></a></li>
+                <li><a href="#skills" class="link" title="Habilidades"><span class="material-icons">person</span></a></li>
+                <li><a href="#formacao" class="link" title="Formação"><span class="material-icons">school</span></a></li>
+                <li><a href="#projetos" class="link" title="Projetos"><span class="material-icons">design_services</span></a></li>
+                <li><a href="#" id="botao-tema" title="Tema de fundo"><span class="material-icons">dark_mode</span></a></li>
             </ul>
         </nav> 
     </header>
     <main>
         <section id="home">
-            
+
+            <img src="img/foto-perfil.jpeg" id="foto-perfil" alt="Foto de perfil" title="Lohan Gonçalves">
             <h1>Lohan Gonçalves</h1>
             <p>
                 Sou estudante de Análise e Desenvolvimento de Sistemas. Tenho interesse em desenvolvimento Front-end, área na qual desejo construir minha carreira, pois gosto de criar sites modernos, responsivos e bem estruturados que atendam às necessidades das pessoas. No momento estou aprendendo <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> e desenvolvendo pequenos projetos para praticar conceitos de interfaces acessíveis, usabilidade e boas práticas de código.
             </p>
 
-            <ul>
-                <li><img class="redes-sociais" src="https://icons.iconarchive.com/icons/pictogrammers/material/128/instagram-icon.png"></li>
-                <li><img class="redes-sociais" src="https://icons.iconarchive.com/icons/pictogrammers/material/128/linkedin-icon.png"></li>
-                <li><img class="redes-sociais" src="https://icons.iconarchive.com/icons/arturo-wibawa/akar/128/github-icon.png"></li>
-            </ul>
+            <!-- REDES SOCIAIS -->
+            <div id="redes-sociais">
+                <a href="www.linkedin.com/in/lohangoncalves9" target="_blank" rel="nofollow" title="Linkedin">
+                    <img class="icones-sociais" src="https://icons.iconarchive.com/icons/simpleicons-team/simple/128/linkedin-icon.png">
+                </a>
+                <a href="https://www.instagram.com/lohang.nl/" target="_blank" rel="nofollow" title="Instagram">
+                    <img class="icones-sociais" src="https://icons.iconarchive.com/icons/pictogrammers/material/128/instagram-icon.png">
+                </a>
+                <a href="https://github.com/lohangoncalves" target="_blank" rel="nofollow" title="GitHub">
+                    <img class="icones-sociais" src="https://icons.iconarchive.com/icons/arturo-wibawa/akar/128/github-icon.png">
+                </a>
+            </div>
 
+        </section>
+        <section id="detalhes">
+
+            <!-- HABILIDADES -->
+            <article id="skills">
+                <h2>Habilidades</h2>
+
+                <div id="skill-container">
+
+                    <!-- HTML 5 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                HTML5
+                            </span>
+                            <span class="porcento">
+                                90%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width:90%">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                CSS3
+                            </span>
+                            <span class="porcento">
+                                80%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;">
+
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- JAVASCRIPT -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                JavaScript
+                            </span>
+                            <span class="porcento">
+                                5%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 5%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- COMUNICAÇÃO -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                Comunicação
+                            </span>
+                            <span class="porcento">
+                                90%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- FORMAÇÃO -->
+            <article id="formacao">
+                <h2>Formação</h2>
+
+                <div id="formacao-container">
+                    <div class="curso">
+                        <p class="periodo">2022 - 2024</p>
+                        <h3 class="instituicao">Colégio Maanaim - Castanhal</h3>
+                        <p class="titulacao">Ensino Médio</p>
+                    </div>
+                    <div class="curso">
+                        <p class="periodo">2025 - 2027</p>
+                        <h3 class="instituicao">Faculdade Estácio de Castanhal</h3>
+                        <p class="titulacao">Técnico de ADS</p>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- PROJETOS -->
+            <article id="projetos">
+                <h2>Projetos</h2>
+
+                <div id="projeto-container">
+
+                    <!-- PROJETO ANDROID -->
+                    <div class="projeto">
+                        <img class="foto" src="img/projeto-03-android.jpg" alt="Imagem do projeto Android">
+                        <div class="projeto-info">
+                            <p class="periodo">2025</p>
+                            <h3>Projeto Android</h3>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsum explicabo sint doloribus aut pariatur cumque esse omnis, perferendis, iure veniam nostrum eum, dolorem distinctio a nesciunt rerum quis vel.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <!-- PROJETO CORDEL -->
+                    <div class="projeto">
+                        <img class="foto" src="img/projeto-02-cordel.jpg" alt="Imagem do projeto Cordel">
+                        <div class="projeto-info">
+                            <p class="periodo">2025</p>
+                            <h3>Projeto Cordel</h3>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsum explicabo sint doloribus aut pariatur cumque esse omnis, perferendis, iure veniam nostrum eum, dolorem distinctio a nesciunt rerum quis vel.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <!-- PROJETO LOGIN -->
+                    <div class="projeto">
+                        <img class="foto" src="img/projeto-05-login.jpg" alt="Imagem do projeto login">
+                        <div class="projeto-info">
+                            <p class="periodo">2025</p>
+                            <h3>Projeto Login</h3>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsum explicabo sint doloribus aut pariatur cumque esse omnis, perferendis, iure veniam nostrum eum, dolorem distinctio a nesciunt rerum quis vel.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
 
         </section>
 
     </main>
     <footer>
-
+        <p> 
+            Portfólio desenvolvido por <a href="https://www.instagram.com/lohang.nl/" target="_blank">Lohan Gonçalves</a>
+        </p>
     </footer>
 
     <script src="js/script.js"></script>
